@@ -8,7 +8,7 @@ input_folder = r"."  # input folder directory where pdf files are
 # what you want to remove
 watermark_text = "Educationblog24.com"
 
-# ফোল্ডারের সব PDF ফাইল বের করা
+# find all pdf from folder
 pdf_files = glob.glob(os.path.join(input_folder, "*.pdf"))
 print(f"total {len(pdf_files)} PDF files found in {input_folder}")
 
@@ -41,3 +41,4 @@ for file in pdf_files:
     print(f" New file: {output_file}")
 
 print("\n All done!")
+
